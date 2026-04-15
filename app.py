@@ -18,7 +18,7 @@ html, body, [class*="css"]  {
 /* 카드 컨테이너(경계선 래퍼) 디자인 개선 */
 [data-testid="stVerticalBlockBorderWrapper"] {
     transition: transform 0.2s ease, box-shadow 0.2s ease;
-    border-radius: 12px;
+    border-radius: 15px;
     background-color: #ffffff;
     border: 1px solid #eaeaea;
 }
