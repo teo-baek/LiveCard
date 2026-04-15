@@ -60,6 +60,8 @@ if excel_file and image_files:
                 df = pd.read_csv(excel_file, encoding='utf-8')
             except UnicodeDecodeError:
                 df = pd.read_csv(excel_file, encoding='euc-kr')
+        elif excel_file.name.endswith('.xls'):
+            df = pd.read_excel(excel_file, engine='xlrd')
         else:
             df = pd.read_excel(excel_file, engine='openpyxl')
     except Exception as e:
